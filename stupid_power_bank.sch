@@ -1,0 +1,1068 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 619AF800
+P 1850 5050
+F 0 "J?" H 1957 5917 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1957 5826 50  0000 C CNN
+F 2 "" H 2000 5050 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2000 5050 50  0001 C CNN
+	1    1850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J?
+U 1 1 619B1F3A
+P 18700 2450
+F 0 "J?" H 18757 2917 50  0000 C CNN
+F 1 "USB_A" H 18757 2826 50  0000 C CNN
+F 2 "" H 18850 2400 50  0001 C CNN
+F 3 " ~" H 18850 2400 50  0001 C CNN
+	1    18700 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L my_kicad:chy100 U?
+U 1 1 619B4985
+P 17650 2550
+F 0 "U?" H 17650 3081 50  0000 C CNN
+F 1 "chy100" H 17650 2990 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 17750 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/328/chiphy_family_datasheet-269468.pdf" H 17750 2950 50  0001 C CNN
+	1    17650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:G6S-2 K?
+U 1 1 619AD73B
+P 4350 4450
+F 0 "K?" H 4980 4496 50  0000 L CNN
+F 1 "G6S-2" H 4980 4405 50  0000 L CNN
+F 2 "" H 4350 4450 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6s.pdf" H 4350 4450 50  0001 C CNN
+	1    4350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L my_kicad:ME4057 U?
+U 1 1 619CD4C0
+P 6400 5200
+F 0 "U?" H 7100 5465 50  0000 C CNN
+F 1 "ME4057" H 7100 5374 50  0000 C CNN
+F 2 "SOIC127P600X175-9N" H 6550 5000 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ME4057ASPG_C82651.pdf" H 6550 5050 50  0001 L CNN
+F 4 "1A Standalone Linear Li-lon Battery Charger, SOP-8" H 7650 5050 50  0001 L CNN "Description"
+F 5 "1.75" H 7650 4950 50  0001 L CNN "Height"
+	1    6400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 6050 8900 6100
+Wire Wire Line
+	8900 6100 8700 6100
+Connection ~ 8900 6100
+Wire Wire Line
+	8900 6100 8900 6150
+Wire Wire Line
+	10150 6050 10200 6050
+Wire Wire Line
+	10200 6150 10150 6150
+Connection ~ 8700 6100
+Wire Wire Line
+	7800 5200 8150 5200
+Wire Wire Line
+	8150 5200 8150 4800
+Wire Wire Line
+	8150 4800 10650 4800
+Wire Wire Line
+	6300 6100 6300 5650
+Wire Wire Line
+	6300 5650 6400 5650
+Wire Wire Line
+	6300 6100 8050 6100
+Wire Wire Line
+	6400 5200 6000 5200
+Connection ~ 6300 6100
+$Comp
+L Device:R_Small R?
+U 1 1 619F6E7B
+P 8050 5850
+F 0 "R?" H 8109 5896 50  0000 L CNN
+F 1 "R_Small" H 8109 5805 50  0000 L CNN
+F 2 "" H 8050 5850 50  0001 C CNN
+F 3 "~" H 8050 5850 50  0001 C CNN
+	1    8050 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5600 8050 5600
+Wire Wire Line
+	8050 5600 8050 5750
+Wire Wire Line
+	8050 5950 8050 6100
+Connection ~ 8050 6100
+Wire Wire Line
+	8050 6100 8300 6100
+Wire Wire Line
+	10200 6050 10200 6100
+Wire Wire Line
+	8900 6050 9050 6050
+Wire Wire Line
+	8900 6150 9050 6150
+Wire Wire Line
+	10650 6100 10200 6100
+Connection ~ 10200 6100
+Wire Wire Line
+	10200 6100 10200 6150
+$Comp
+L my_kicad:AO8810 Q?
+U 1 1 619D0978
+P 8750 6250
+F 0 "Q?" H 9450 6515 50  0000 C CNN
+F 1 "AO8810" H 9450 6424 50  0000 C CNN
+F 2 "SOP65P640X120-8N" H 10000 6350 50  0001 L CNN
+F 3 "http://aosmd.com/res/data_sheets/AO8810.pdf" H 10000 6250 50  0001 L CNN
+F 4 "MOSFET 2N-CH 20V 7A 8-TSSOP" H 10000 6150 50  0001 L CNN "Description"
+F 5 "1.2" H 10000 6050 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 10000 5950 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO8810" H 10000 5850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "AO8810" H 10000 5550 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/ao8810/alpha-and-omega-semiconductor" H 10000 5450 50  0001 L CNN "Arrow Price/Stock"
+	1    8750 6250
+	1    0    0    1   
+$EndComp
+Connection ~ 10650 5550
+Wire Wire Line
+	10650 5550 10650 6100
+Wire Wire Line
+	9700 5650 9700 5750
+Wire Wire Line
+	9500 5650 9500 5750
+Connection ~ 10650 5050
+Wire Wire Line
+	10300 5050 10300 5250
+Wire Wire Line
+	10300 5050 10350 5050
+Connection ~ 10300 5050
+Wire Wire Line
+	10200 5050 10300 5050
+Wire Wire Line
+	10550 5050 10650 5050
+Wire Wire Line
+	8700 5650 8700 6100
+Wire Wire Line
+	8700 5250 8700 5450
+Wire Wire Line
+	9100 5250 8700 5250
+Wire Wire Line
+	10650 5050 10650 5100
+Wire Wire Line
+	10200 5150 10200 5050
+Wire Wire Line
+	10100 5150 10200 5150
+Wire Wire Line
+	10300 5550 10650 5550
+Connection ~ 10300 5550
+Wire Wire Line
+	10300 5450 10300 5550
+Wire Wire Line
+	10200 5550 10300 5550
+Wire Wire Line
+	10200 5250 10200 5550
+Wire Wire Line
+	10100 5250 10200 5250
+$Comp
+L Device:C_Small C?
+U 1 1 619EA7A8
+P 10300 5350
+F 0 "C?" H 10392 5396 50  0000 L CNN
+F 1 "C_Small" H 10392 5305 50  0000 L CNN
+F 2 "" H 10300 5350 50  0001 C CNN
+F 3 "~" H 10300 5350 50  0001 C CNN
+	1    10300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619E9C73
+P 8700 5550
+F 0 "R?" H 8759 5596 50  0000 L CNN
+F 1 "R_Small" H 8759 5505 50  0000 L CNN
+F 2 "" H 8700 5550 50  0001 C CNN
+F 3 "~" H 8700 5550 50  0001 C CNN
+	1    8700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 619E8CBC
+P 10450 5050
+F 0 "R?" V 10254 5050 50  0000 C CNN
+F 1 "R_Small" V 10345 5050 50  0000 C CNN
+F 2 "" H 10450 5050 50  0001 C CNN
+F 3 "~" H 10450 5050 50  0001 C CNN
+	1    10450 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 5400 10650 5550
+$Comp
+L my_kicad:S-8261ABPMD-G3PT2G PS?
+U 1 1 619CEB3B
+P 9100 5150
+F 0 "PS?" H 9600 5415 50  0000 C CNN
+F 1 "S-8261ABPMD-G3PT2G" H 9600 5324 50  0000 C CNN
+F 2 "SOT95P275X135-6N" H 9950 5250 50  0001 L CNN
+F 3 "https://mouser.componentsearchengine.com/Datasheets/1/S-8261ABPMD-G3PT2G.pdf" H 9950 5050 50  0001 L CNN
+F 4 "Battery Management Lithium-Ion battery protection (1 cell) SOT-23-6" H 9950 5150 50  0001 L CNN "Description"
+F 5 "1.35" H 9950 4950 50  0001 L CNN "Height"
+F 6 "ABLIC Inc." H 9950 4850 50  0001 L CNN "Manufacturer_Name"
+F 7 "S-8261ABPMD-G3PT2G" H 9950 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "628-S-8261ABPMG3PT2G" H 9950 4650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ABLIC/S-8261ABPMD-G3PT2G/?qs=AkQN2RqrBZLTRWrx8QbYJw%3D%3D" H 9950 4550 50  0001 L CNN "Mouser Price/Stock"
+	1    9100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 619A9AA3
+P 10650 5300
+F 0 "BT?" H 10768 5396 50  0000 L CNN
+F 1 "Battery_Cell" H 10768 5305 50  0000 L CNN
+F 2 "" V 10650 5360 50  0001 C CNN
+F 3 "~" V 10650 5360 50  0001 C CNN
+	1    10650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A2CB10
+P 8300 6250
+F 0 "#PWR?" H 8300 6000 50  0001 C CNN
+F 1 "GND" H 8305 6077 50  0000 C CNN
+F 2 "" H 8300 6250 50  0001 C CNN
+F 3 "" H 8300 6250 50  0001 C CNN
+	1    8300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 6250 8300 6100
+Connection ~ 8300 6100
+Wire Wire Line
+	8300 6100 8500 6100
+$Comp
+L my_kicad:ME4057 U?
+U 1 1 61A40EDD
+P 6400 3100
+F 0 "U?" H 7100 3365 50  0000 C CNN
+F 1 "ME4057" H 7100 3274 50  0000 C CNN
+F 2 "SOIC127P600X175-9N" H 6550 2900 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ME4057ASPG_C82651.pdf" H 6550 2950 50  0001 L CNN
+F 4 "1A Standalone Linear Li-lon Battery Charger, SOP-8" H 7650 2950 50  0001 L CNN "Description"
+F 5 "1.75" H 7650 2850 50  0001 L CNN "Height"
+	1    6400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3950 8900 4000
+Wire Wire Line
+	8900 4000 8700 4000
+Connection ~ 8900 4000
+Wire Wire Line
+	8900 4000 8900 4050
+Wire Wire Line
+	10150 3950 10200 3950
+Wire Wire Line
+	10200 4050 10150 4050
+Connection ~ 8700 4000
+Wire Wire Line
+	7800 3100 8150 3100
+Wire Wire Line
+	8150 3100 8150 2650
+Wire Wire Line
+	8150 2650 10650 2650
+Wire Wire Line
+	6300 4000 6300 3550
+Wire Wire Line
+	6300 3550 6400 3550
+Wire Wire Line
+	6300 4000 8050 4000
+Wire Wire Line
+	6300 4000 5800 4000
+Connection ~ 6300 4000
+$Comp
+L Device:R_Small R?
+U 1 1 61A40EF5
+P 8050 3750
+F 0 "R?" H 8109 3796 50  0000 L CNN
+F 1 "R_Small" H 8109 3705 50  0000 L CNN
+F 2 "" H 8050 3750 50  0001 C CNN
+F 3 "~" H 8050 3750 50  0001 C CNN
+	1    8050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3500 8050 3500
+Wire Wire Line
+	8050 3500 8050 3650
+Wire Wire Line
+	8050 3850 8050 4000
+Connection ~ 8050 4000
+Wire Wire Line
+	10200 3950 10200 4000
+Wire Wire Line
+	8900 3950 9050 3950
+Wire Wire Line
+	8900 4050 9050 4050
+Wire Wire Line
+	10650 4000 10200 4000
+Connection ~ 10200 4000
+Wire Wire Line
+	10200 4000 10200 4050
+$Comp
+L my_kicad:AO8810 Q?
+U 1 1 61A40F0C
+P 8750 4150
+F 0 "Q?" H 9450 4415 50  0000 C CNN
+F 1 "AO8810" H 9450 4324 50  0000 C CNN
+F 2 "SOP65P640X120-8N" H 10000 4250 50  0001 L CNN
+F 3 "http://aosmd.com/res/data_sheets/AO8810.pdf" H 10000 4150 50  0001 L CNN
+F 4 "MOSFET 2N-CH 20V 7A 8-TSSOP" H 10000 4050 50  0001 L CNN "Description"
+F 5 "1.2" H 10000 3950 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 10000 3850 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO8810" H 10000 3750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "AO8810" H 10000 3450 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/ao8810/alpha-and-omega-semiconductor" H 10000 3350 50  0001 L CNN "Arrow Price/Stock"
+	1    8750 4150
+	1    0    0    1   
+$EndComp
+Connection ~ 10650 3450
+Wire Wire Line
+	10650 3450 10650 4000
+Wire Wire Line
+	9700 3550 9700 3650
+Wire Wire Line
+	9500 3550 9500 3650
+Connection ~ 10650 2950
+Wire Wire Line
+	10300 2950 10300 3150
+Wire Wire Line
+	10300 2950 10350 2950
+Connection ~ 10300 2950
+Wire Wire Line
+	10200 2950 10300 2950
+Wire Wire Line
+	10550 2950 10650 2950
+Wire Wire Line
+	8700 3550 8700 4000
+Wire Wire Line
+	8700 3150 8700 3350
+Wire Wire Line
+	9100 3150 8700 3150
+Wire Wire Line
+	10650 2950 10650 3000
+Wire Wire Line
+	10200 3050 10200 2950
+Wire Wire Line
+	10100 3050 10200 3050
+Wire Wire Line
+	10300 3450 10650 3450
+Connection ~ 10300 3450
+Wire Wire Line
+	10300 3350 10300 3450
+Wire Wire Line
+	10200 3450 10300 3450
+Wire Wire Line
+	10200 3150 10200 3450
+Wire Wire Line
+	10100 3150 10200 3150
+$Comp
+L Device:C_Small C?
+U 1 1 61A40F29
+P 10300 3250
+F 0 "C?" H 10392 3296 50  0000 L CNN
+F 1 "C_Small" H 10392 3205 50  0000 L CNN
+F 2 "" H 10300 3250 50  0001 C CNN
+F 3 "~" H 10300 3250 50  0001 C CNN
+	1    10300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61A40F2F
+P 8700 3450
+F 0 "R?" H 8759 3496 50  0000 L CNN
+F 1 "R_Small" H 8759 3405 50  0000 L CNN
+F 2 "" H 8700 3450 50  0001 C CNN
+F 3 "~" H 8700 3450 50  0001 C CNN
+	1    8700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61A40F35
+P 10450 2950
+F 0 "R?" V 10254 2950 50  0000 C CNN
+F 1 "R_Small" V 10345 2950 50  0000 C CNN
+F 2 "" H 10450 2950 50  0001 C CNN
+F 3 "~" H 10450 2950 50  0001 C CNN
+	1    10450 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10650 3300 10650 3450
+$Comp
+L my_kicad:S-8261ABPMD-G3PT2G PS?
+U 1 1 61A40F42
+P 9100 3050
+F 0 "PS?" H 9600 3315 50  0000 C CNN
+F 1 "S-8261ABPMD-G3PT2G" H 9600 3224 50  0000 C CNN
+F 2 "SOT95P275X135-6N" H 9950 3150 50  0001 L CNN
+F 3 "https://mouser.componentsearchengine.com/Datasheets/1/S-8261ABPMD-G3PT2G.pdf" H 9950 2950 50  0001 L CNN
+F 4 "Battery Management Lithium-Ion battery protection (1 cell) SOT-23-6" H 9950 3050 50  0001 L CNN "Description"
+F 5 "1.35" H 9950 2850 50  0001 L CNN "Height"
+F 6 "ABLIC Inc." H 9950 2750 50  0001 L CNN "Manufacturer_Name"
+F 7 "S-8261ABPMD-G3PT2G" H 9950 2650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "628-S-8261ABPMG3PT2G" H 9950 2550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ABLIC/S-8261ABPMD-G3PT2G/?qs=AkQN2RqrBZLTRWrx8QbYJw%3D%3D" H 9950 2450 50  0001 L CNN "Mouser Price/Stock"
+	1    9100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 61A40F48
+P 10650 3200
+F 0 "BT?" H 10768 3296 50  0000 L CNN
+F 1 "Battery_Cell" H 10768 3205 50  0000 L CNN
+F 2 "" V 10650 3260 50  0001 C CNN
+F 3 "~" V 10650 3260 50  0001 C CNN
+	1    10650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4000 8700 4000
+Wire Wire Line
+	10650 4800 10650 5050
+Wire Wire Line
+	8500 6100 8500 6500
+Wire Wire Line
+	8500 6500 13850 6500
+Connection ~ 8500 6100
+Wire Wire Line
+	8500 6100 8700 6100
+$Comp
+L power:GND #PWR?
+U 1 1 61A8F3F9
+P 18700 3150
+F 0 "#PWR?" H 18700 2900 50  0001 C CNN
+F 1 "GND" H 18705 2977 50  0000 C CNN
+F 2 "" H 18700 3150 50  0001 C CNN
+F 3 "" H 18700 3150 50  0001 C CNN
+	1    18700 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 10650 2650
+Wire Wire Line
+	10650 2650 10650 2950
+Wire Wire Line
+	10650 4800 10650 4650
+Wire Wire Line
+	10650 4650 5250 4650
+Wire Wire Line
+	5250 4650 5250 3950
+Wire Wire Line
+	5250 3950 4650 3950
+Wire Wire Line
+	4650 3950 4650 4150
+Connection ~ 10650 4800
+Wire Wire Line
+	4750 4750 4750 4950
+Wire Wire Line
+	4750 4950 5800 4950
+Wire Wire Line
+	5800 4950 5800 4000
+Wire Wire Line
+	5600 3100 5600 5200
+Wire Wire Line
+	5600 5200 4350 5200
+Wire Wire Line
+	4350 5200 4350 4750
+Wire Wire Line
+	5600 3100 6400 3100
+Wire Wire Line
+	4450 4150 4450 3950
+Wire Wire Line
+	4450 3950 3950 3950
+Wire Wire Line
+	3950 3950 3950 4150
+Wire Wire Line
+	3950 6100 5100 6100
+Wire Wire Line
+	1850 6100 3950 6100
+Connection ~ 3950 6100
+Wire Wire Line
+	1850 6100 1850 5950
+Wire Wire Line
+	2450 4450 2850 4450
+Wire Wire Line
+	2850 4450 2850 3950
+Wire Wire Line
+	2850 3950 3950 3950
+Connection ~ 3950 3950
+Wire Wire Line
+	3950 4750 3950 6100
+Wire Wire Line
+	4850 4150 4850 4100
+Wire Wire Line
+	4850 4100 5100 4100
+Wire Wire Line
+	5100 4100 5100 6100
+Connection ~ 5100 6100
+Wire Wire Line
+	5100 6100 6300 6100
+Wire Wire Line
+	10650 1900 10650 2650
+Wire Wire Line
+	3400 4450 3400 5350
+Wire Wire Line
+	6000 5350 6000 5200
+Wire Wire Line
+	3400 5350 6000 5350
+Wire Wire Line
+	2850 4450 3400 4450
+Connection ~ 2850 4450
+$Comp
+L Device:R_Small R?
+U 1 1 61B791B2
+P 2750 5450
+F 0 "R?" H 2809 5496 50  0000 L CNN
+F 1 "52k" H 2809 5405 50  0000 L CNN
+F 2 "" H 2750 5450 50  0001 C CNN
+F 3 "~" H 2750 5450 50  0001 C CNN
+	1    2750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61B7A500
+P 3000 5450
+F 0 "R?" H 3059 5496 50  0000 L CNN
+F 1 "52k" H 3059 5405 50  0000 L CNN
+F 2 "" H 3000 5450 50  0001 C CNN
+F 3 "~" H 3000 5450 50  0001 C CNN
+	1    3000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L my_kicad:FDS4935A IC?
+U 1 1 61B865D4
+P 14300 2750
+F 0 "IC?" H 14800 3015 50  0000 C CNN
+F 1 "FDS4935A" H 14800 2924 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 15150 2850 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/6eb99a7868cdd344ac7343b5d87fd76b.pdf" H 15150 2750 50  0001 L CNN
+F 4 "FDS4935A, Dual P-channel MOSFET Transistor 7A 30V, 8-Pin SOIC" H 15150 2650 50  0001 L CNN "Description"
+F 5 "1.75" H 15150 2550 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 15150 2450 50  0001 L CNN "Manufacturer_Name"
+F 7 "FDS4935A" H 15150 2350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "512-FDS4935A" H 15150 2250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDS4935A?qs=FOlmdCx%252BAA3qFQO5yauNvw%3D%3D" H 15150 2150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "FDS4935A" H 15150 2050 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/fds4935a/on-semiconductor?region=nac" H 15150 1950 50  0001 L CNN "Arrow Price/Stock"
+	1    14300 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 1900 12250 1900
+Wire Wire Line
+	14000 2000 14000 2450
+Wire Wire Line
+	14000 2450 16650 2450
+Wire Wire Line
+	16650 2450 16650 2650
+Wire Wire Line
+	16650 2650 17200 2650
+$Comp
+L Device:R_Small R?
+U 1 1 61B9B003
+P 13700 2000
+F 0 "R?" V 13504 2000 50  0000 C CNN
+F 1 "R_Small" V 13595 2000 50  0000 C CNN
+F 2 "" H 13700 2000 50  0001 C CNN
+F 3 "~" H 13700 2000 50  0001 C CNN
+	1    13700 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13800 2000 14000 2000
+Connection ~ 14000 2000
+Wire Wire Line
+	13600 2000 13450 2000
+Wire Wire Line
+	13450 2000 13450 1900
+Wire Wire Line
+	18100 2450 18400 2450
+Wire Wire Line
+	18400 2550 18100 2550
+Wire Wire Line
+	18400 2250 18150 2250
+Wire Wire Line
+	18150 2250 18150 1950
+Wire Wire Line
+	18150 1950 17650 1950
+Wire Wire Line
+	17650 2200 17650 1950
+Wire Wire Line
+	18700 2850 18700 3050
+Wire Wire Line
+	18700 3050 17650 3050
+Wire Wire Line
+	17650 3050 17650 2900
+Wire Wire Line
+	18700 3150 18700 3050
+Connection ~ 18700 3050
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 61BE2A47
+P 14000 1450
+F 0 "Q?" V 14342 1450 50  0000 C CNN
+F 1 "IRLML6402" V 14251 1450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14200 1375 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 14000 1450 50  0001 L CNN
+	1    14000 1450
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61BF656D
+P 15000 1350
+F 0 "D?" H 14993 1095 50  0000 C CNN
+F 1 "LED" H 14993 1186 50  0000 C CNN
+F 2 "" H 15000 1350 50  0001 C CNN
+F 3 "~" H 15000 1350 50  0001 C CNN
+	1    15000 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61BF728B
+P 14550 1350
+F 0 "R?" V 14354 1350 50  0000 C CNN
+F 1 "R_Small" V 14445 1350 50  0000 C CNN
+F 2 "" H 14550 1350 50  0001 C CNN
+F 3 "~" H 14550 1350 50  0001 C CNN
+	1    14550 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14200 1350 14450 1350
+Wire Wire Line
+	14650 1350 14850 1350
+Wire Wire Line
+	15150 1350 15550 1350
+Wire Wire Line
+	14000 1650 14000 1700
+Wire Wire Line
+	13800 1350 13700 1350
+Wire Wire Line
+	13100 1350 13100 1900
+Connection ~ 13100 1900
+Wire Wire Line
+	13100 1900 13450 1900
+$Comp
+L Device:R_Small R?
+U 1 1 61C150B8
+P 13700 1500
+F 0 "R?" H 13641 1454 50  0000 R CNN
+F 1 "R_Small" H 13641 1545 50  0000 R CNN
+F 2 "" H 13700 1500 50  0001 C CNN
+F 3 "~" H 13700 1500 50  0001 C CNN
+	1    13700 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13700 1400 13700 1350
+Connection ~ 13700 1350
+Wire Wire Line
+	13700 1350 13100 1350
+Wire Wire Line
+	13700 1600 13700 1700
+Wire Wire Line
+	13700 1700 14000 1700
+Connection ~ 14000 1700
+Wire Wire Line
+	14000 1700 14000 2000
+$Comp
+L power:GND #PWR?
+U 1 1 61C22F6C
+P 15550 1550
+F 0 "#PWR?" H 15550 1300 50  0001 C CNN
+F 1 "GND" H 15555 1377 50  0000 C CNN
+F 2 "" H 15550 1550 50  0001 C CNN
+F 3 "" H 15550 1550 50  0001 C CNN
+	1    15550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15550 1350 15550 1550
+$Comp
+L my_kicad:LTC1147CS8-5#PBF IC?
+U 1 1 61C34239
+P 12800 3050
+F 0 "IC?" H 13450 3315 50  0000 C CNN
+F 1 "LTC1147CS8-5#PBF" H 13450 3224 50  0000 C CNN
+F 2 "SOIC127P599X175-8N" H 13950 3150 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1147fds.pdf" H 13950 3050 50  0001 L CNN
+F 4 "LINEAR TECHNOLOGY - LTC1147CS8-5#PBF - DC/DC Controller, High Efficiency, 3.5V to 16V, 1 Output, Buck, 400kHz, SOIC-8" H 13950 2950 50  0001 L CNN "Description"
+F 5 "1.752" H 13950 2850 50  0001 L CNN "Height"
+F 6 "Linear Technology" H 13950 2750 50  0001 L CNN "Manufacturer_Name"
+F 7 "LTC1147CS8-5#PBF" H 13950 2650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-LTC1147CS8-5#PBF" H 13950 2550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LTC1147CS8-5%23PBF" H 13950 2450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LTC1147CS8-5#PBF" H 13950 2350 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/ltc1147cs8-5pbf/linear-technology" H 13950 2250 50  0001 L CNN "Arrow Price/Stock"
+	1    12800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 3050 12250 3050
+Wire Wire Line
+	12250 3050 12250 1900
+Connection ~ 12250 1900
+Wire Wire Line
+	12250 1900 13100 1900
+Wire Wire Line
+	13100 2100 13100 1900
+$Comp
+L Diode:Z3SMCxxx D?
+U 1 1 61C6FCFE
+P 15450 3250
+F 0 "D?" V 15404 3330 50  0000 L CNN
+F 1 "Z3SMCxxx" V 15495 3330 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 15450 3075 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/z3smc1.pdf" H 15450 3250 50  0001 C CNN
+	1    15450 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15300 2850 15350 2850
+Wire Wire Line
+	15350 2850 15350 2800
+Wire Wire Line
+	15350 2750 15300 2750
+Wire Wire Line
+	15350 2800 15800 2800
+Wire Wire Line
+	15800 2800 15800 1950
+Wire Wire Line
+	15800 1950 17000 1950
+Connection ~ 15350 2800
+Wire Wire Line
+	15350 2800 15350 2750
+Connection ~ 17650 1950
+Wire Wire Line
+	13450 1900 14250 1900
+Wire Wire Line
+	14250 1900 14250 2750
+Wire Wire Line
+	14250 2750 14300 2750
+Connection ~ 13450 1900
+Wire Wire Line
+	14300 2850 14000 2850
+Wire Wire Line
+	14000 2850 14000 2450
+Connection ~ 14000 2450
+Wire Wire Line
+	14100 3050 14300 3050
+Wire Wire Line
+	14300 2950 13950 2950
+Wire Wire Line
+	13950 2950 13950 2100
+Wire Wire Line
+	13950 2100 13100 2100
+Wire Wire Line
+	15300 2950 15350 2950
+Wire Wire Line
+	15350 2950 15350 3000
+Wire Wire Line
+	15350 3050 15300 3050
+Wire Wire Line
+	15350 3000 15450 3000
+Wire Wire Line
+	15450 3000 15450 3100
+Connection ~ 15350 3000
+Wire Wire Line
+	15350 3000 15350 3050
+$Comp
+L Device:L L?
+U 1 1 61CE4AEA
+P 15700 3000
+F 0 "L?" V 15890 3000 50  0000 C CNN
+F 1 "L" V 15799 3000 50  0000 C CNN
+F 2 "" H 15700 3000 50  0001 C CNN
+F 3 "~" H 15700 3000 50  0001 C CNN
+	1    15700 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 61CE6E07
+P 16100 3000
+F 0 "L?" V 16290 3000 50  0000 C CNN
+F 1 "L" V 16199 3000 50  0000 C CNN
+F 2 "" H 16100 3000 50  0001 C CNN
+F 3 "~" H 16100 3000 50  0001 C CNN
+	1    16100 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	15450 3000 15550 3000
+Connection ~ 15450 3000
+Wire Wire Line
+	15850 3000 15950 3000
+Wire Wire Line
+	14100 3150 14200 3150
+Wire Wire Line
+	14350 3150 14350 3500
+Wire Wire Line
+	14350 3500 15450 3500
+Wire Wire Line
+	15450 3500 15450 3400
+Wire Wire Line
+	15450 3500 16750 3500
+Wire Wire Line
+	17650 3500 17650 3050
+Connection ~ 15450 3500
+Connection ~ 17650 3050
+$Comp
+L Device:R_Small R?
+U 1 1 61D12070
+P 16450 3000
+F 0 "R?" V 16254 3000 50  0000 C CNN
+F 1 "R_Small" V 16345 3000 50  0000 C CNN
+F 2 "" H 16450 3000 50  0001 C CNN
+F 3 "~" H 16450 3000 50  0001 C CNN
+	1    16450 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16250 3000 16300 3000
+Wire Wire Line
+	16550 3000 16600 3000
+Wire Wire Line
+	17000 3000 17000 1950
+Connection ~ 17000 1950
+Wire Wire Line
+	17000 1950 17650 1950
+Wire Wire Line
+	14100 3350 14150 3350
+Wire Wire Line
+	14150 3350 14150 3650
+Wire Wire Line
+	14150 3650 16300 3650
+Wire Wire Line
+	16300 3650 16300 3300
+Connection ~ 16300 3000
+Wire Wire Line
+	16300 3000 16350 3000
+Wire Wire Line
+	12800 3350 12750 3350
+Wire Wire Line
+	12750 3350 12750 3700
+Wire Wire Line
+	12750 3700 16600 3700
+Wire Wire Line
+	16600 3700 16600 3300
+Connection ~ 16600 3000
+Wire Wire Line
+	16600 3000 16750 3000
+$Comp
+L Device:R_Small R?
+U 1 1 61D39181
+P 12600 3500
+F 0 "R?" H 12659 3546 50  0000 L CNN
+F 1 "R_Small" H 12659 3455 50  0000 L CNN
+F 2 "" H 12600 3500 50  0001 C CNN
+F 3 "~" H 12600 3500 50  0001 C CNN
+	1    12600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D3A1CD
+P 12400 3500
+F 0 "C?" H 12492 3546 50  0000 L CNN
+F 1 "C_Small" H 12492 3455 50  0000 L CNN
+F 2 "" H 12400 3500 50  0001 C CNN
+F 3 "~" H 12400 3500 50  0001 C CNN
+	1    12400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D3AAE3
+P 12600 3800
+F 0 "C?" H 12692 3846 50  0000 L CNN
+F 1 "C_Small" H 12692 3755 50  0000 L CNN
+F 2 "" H 12600 3800 50  0001 C CNN
+F 3 "~" H 12600 3800 50  0001 C CNN
+	1    12600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D3B15F
+P 16750 3250
+F 0 "C?" H 16842 3296 50  0000 L CNN
+F 1 "C_Small" H 16842 3205 50  0000 L CNN
+F 2 "" H 16750 3250 50  0001 C CNN
+F 3 "~" H 16750 3250 50  0001 C CNN
+	1    16750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 61D3E1B7
+P 17000 3250
+F 0 "C?" H 17088 3296 50  0000 L CNN
+F 1 "CP_Small" H 17088 3205 50  0000 L CNN
+F 2 "" H 17000 3250 50  0001 C CNN
+F 3 "~" H 17000 3250 50  0001 C CNN
+	1    17000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 61D3F923
+P 12100 3500
+F 0 "C?" H 12188 3546 50  0000 L CNN
+F 1 "CP_Small" H 12188 3455 50  0000 L CNN
+F 2 "" H 12100 3500 50  0001 C CNN
+F 3 "~" H 12100 3500 50  0001 C CNN
+	1    12100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D405AC
+P 11750 3500
+F 0 "C?" H 11842 3546 50  0000 L CNN
+F 1 "C_Small" H 11842 3455 50  0000 L CNN
+F 2 "" H 11750 3500 50  0001 C CNN
+F 3 "~" H 11750 3500 50  0001 C CNN
+	1    11750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 3250 12600 3250
+Wire Wire Line
+	12600 3250 12600 3400
+Wire Wire Line
+	12600 3600 12600 3700
+Wire Wire Line
+	12800 3150 12400 3150
+Wire Wire Line
+	12400 3150 12400 3400
+Wire Wire Line
+	12400 3600 12400 4000
+Wire Wire Line
+	12600 3900 12600 4000
+Wire Wire Line
+	12600 4000 12400 4000
+Wire Wire Line
+	12250 3050 12100 3050
+Wire Wire Line
+	11750 3050 11750 3400
+Connection ~ 12250 3050
+Wire Wire Line
+	12100 3400 12100 3050
+Connection ~ 12100 3050
+Wire Wire Line
+	12100 3050 11750 3050
+Wire Wire Line
+	11750 3600 11750 4000
+Wire Wire Line
+	11750 4000 12100 4000
+Connection ~ 12400 4000
+Wire Wire Line
+	12100 3600 12100 4000
+Connection ~ 12100 4000
+Wire Wire Line
+	12100 4000 12250 4000
+$Comp
+L Device:C_Small C?
+U 1 1 61DABF31
+P 16450 3300
+F 0 "C?" V 16221 3300 50  0000 C CNN
+F 1 "C_Small" V 16312 3300 50  0000 C CNN
+F 2 "" H 16450 3300 50  0001 C CNN
+F 3 "~" H 16450 3300 50  0001 C CNN
+	1    16450 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	16550 3300 16600 3300
+Connection ~ 16600 3300
+Wire Wire Line
+	16600 3300 16600 3000
+Wire Wire Line
+	16350 3300 16300 3300
+Connection ~ 16300 3300
+Wire Wire Line
+	16300 3300 16300 3000
+Wire Wire Line
+	16750 3150 16750 3000
+Connection ~ 16750 3000
+Wire Wire Line
+	16750 3000 17000 3000
+Wire Wire Line
+	17000 3150 17000 3000
+Connection ~ 17000 3000
+Wire Wire Line
+	17000 3350 17000 3500
+Connection ~ 17000 3500
+Wire Wire Line
+	17000 3500 17650 3500
+Wire Wire Line
+	16750 3350 16750 3500
+Connection ~ 16750 3500
+Wire Wire Line
+	16750 3500 17000 3500
+$Comp
+L power:GND #PWR?
+U 1 1 61DF5138
+P 12250 4150
+F 0 "#PWR?" H 12250 3900 50  0001 C CNN
+F 1 "GND" H 12255 3977 50  0000 C CNN
+F 2 "" H 12250 4150 50  0001 C CNN
+F 3 "" H 12250 4150 50  0001 C CNN
+	1    12250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 4150 12250 4000
+Connection ~ 12250 4000
+Wire Wire Line
+	12250 4000 12400 4000
+Wire Wire Line
+	14100 3250 14200 3250
+Wire Wire Line
+	14200 3250 14200 3150
+Connection ~ 14200 3150
+Wire Wire Line
+	14200 3150 14350 3150
+$EndSCHEMATC
